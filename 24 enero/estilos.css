@@ -1,0 +1,67 @@
+.fila{
+    width: 100%;
+}
+
+.fila::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fila>div[class^="columna-"]{
+    width: 100%;
+    float: left;
+    background-color: #ee8dec;
+    border: solid 1px rgb(162, 36, 220);
+    box-sizing: border-box;
+    height: 60px;
+    text-align: center;
+}
+
+
+.fila > div.columna-75{
+    width: 75%;
+}
+
+.fila > div.columna-50{
+    width: 50%;
+}
+.fila > div.columna-25{
+    width: 25%;
+}
+
+
+@media screen and (max-width: 1024px){
+    .fila > div.columna-mo-100{
+        width: 100%;
+    }
+    .fila > div.columna-tablet-75{
+        width: 75%;
+    }
+
+    .fila > div.columna-tablet-50{
+        width: 50%;
+    }
+    .fila > div.columna-tablet-25{
+        width: 25%;
+    }
+
+}
+
+
+@media screen and (max-width: 720){
+    .fila > div.columna-mobile-100{
+        width: 100%;
+    }
+    .fila > div.columna-mobile-75{
+        width: 75%;
+    }
+
+    .fila > div.columna-mobile-50{
+        width: 50%;
+    }
+    .fila > div.columna-mobile-25{
+        width: 25%;
+    }
+
+}
